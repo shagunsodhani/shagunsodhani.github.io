@@ -6,29 +6,42 @@
             </li>
         {% endif %}
 
+        <li class="item">
+            <a class="link" href="https://scholar.google.com/citations?user=ixp-vqMAAAAJ">Research</a>
+        </li>
+        
+        
+        {% if site.talks == true %}
+            {% if page.title != "Talks" %}
+                <li class="item">
+                    <a class="link" href="{{ site.url }}/talks">Talks</a>
+                </li>
+            {% endif %}
+        {% endif %}
+
+        {% if site.mentorship == true %}
+            {% if page.title != "Mentorship" %}
+                <li class="item">
+                    <a class="link" href="{{ site.url }}/mentorship">Mentorship</a>
+                </li>
+            {% endif %}
+        {% endif %}
+
         {% if site.blog == true %}
             {% if page.title != "Blog" %}
                 <li class="item">
-                    <a class="link" href="{{ site.url }}/blog">Blog</a>
+                    <a class="link" href="{{ site.url }}/papers-I-read/">Blog</a>
                 </li>
             {% endif %}
         {% endif %}
 
-        {% if site.projects == true %}
-            {% if page.title != "Projects" %}
+        <!-- {% if site.services == true %}
+            {% if page.title != "Services" %}
                 <li class="item">
-                    <a class="link" href="{{ site.url }}/projects">Projects</a>
+                    <a class="link" href="{{ site.url }}/services/">Services</a>
                 </li>
             {% endif %}
-        {% endif %}
-
-        {% if site.about == true %}
-            {% if page.title != "About" %}
-                <li class="item">
-                    <a class="link" href="{{ site.url }}/about">About</a>
-                </li>
-            {% endif %}
-        {% endif %}
+        {% endif %} -->
 
         {% if site.resume == true %}
             <li class="item">
